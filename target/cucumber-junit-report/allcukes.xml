@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="155.359315">
+<testcase classname="Deposit" name="Deposit" time="30.914911">
+<failure message="cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'com.suite.Login.DepositTest.deposit_text_should_be_displyed(String) in file:/C:/Maven/focusSmart/target/classes/' with pattern [^deposit text should be displyed$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. &#10;Step: Then deposit text should be displyed&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:299)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)&#13;&#10;&#9;at cucumber.runtime.Runtime.run(Runtime.java:121)&#13;&#10;&#9;at cucumber.api.cli.Main.run(Main.java:36)&#13;&#10;&#9;at cucumber.api.cli.Main.main(Main.java:18)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:497)&#13;&#10;&#9;at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:293)&#13;&#10;&#9;at java.lang.Thread.run(Thread.java:745)&#13;&#10;"><![CDATA[Given I have logged in supercasino on Mozilla...............................passed
+And I click "Depositbutton".................................................passed
+And I input "AmtDeposit" as "10"............................................passed
+And I enter "Cvv" as "123"..................................................passed
+And I click "Deposit".......................................................passed
+Then deposit text should be displyed........................................failed
+
+StackTrace:
+cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'com.suite.Login.DepositTest.deposit_text_should_be_displyed(String) in file:/C:/Maven/focusSmart/target/classes/' with pattern [^deposit text should be displyed$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
+Step: Then deposit text should be displyed
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:121)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:293)
+	at java.lang.Thread.run(Thread.java:745)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login" time="7.159955">
+<failure message="org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with&#10;Command duration or timeout: 5.03 seconds&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'solomon', ip: '192.168.0.9', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: b6af31d3-ecc2-44e9-819c-f7cf2b346f26&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:422)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)&#13;&#10;&#9;at com.WebConnector.WebConnector.type(WebConnector.java:99)&#13;&#10;&#9;at com.suite.Register.CommonUti.i_enter_as(CommonUti.java:26)&#13;&#10;&#9;at ✽.And I enter &quot;Logusername&quot; as &quot;solomon2014&quot;(main/resources/com/suite/Login/features/com.suite.Login.feature:8)&#13;&#10;Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'solomon', ip: '192.168.0.9', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)&#13;&#10;&#9;at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)&#13;&#10;&#9;at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)&#13;&#10;&#9;at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)&#13;&#10;"><![CDATA[Given I navigate to "siteName" on "Mozilla".................................passed
+And I enter "Logusername" as "solomon2014"..................................failed
+And I enter "Logpassword" as "London01".....................................skipped
+And I click "LoginButton"...................................................skipped
+Then "Depositbutton", "usernameInfo", "BalInfo", "Account"should be present.skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 5.03 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'solomon', ip: '192.168.0.9', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b6af31d3-ecc2-44e9-819c-f7cf2b346f26
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
+	at com.WebConnector.WebConnector.type(WebConnector.java:99)
+	at com.suite.Register.CommonUti.i_enter_as(CommonUti.java:26)
+	at ✽.And I enter "Logusername" as "solomon2014"(main/resources/com/suite/Login/features/com.suite.Login.feature:8)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'solomon', ip: '192.168.0.9', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+]]></failure>
+</testcase>
+<testcase classname="PromotionPage" name="PromotionPage" time="75.539202">
+<system-out><![CDATA[Given I navigate to "siteName" on "Mozilla".................................passed
+When I click on "PromotionTab"..............................................passed
+And I click on each "InfoButton"............................................passed
+Then TitlePage should equal each promotionTitle.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="ChatBox" name="ChatBox" time="9.200657">
+<failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class='chat_button tmp_chat_fixes js-playtech-chat column3-6']&quot;}&#10;Command duration or timeout: 5.13 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'solomon', ip: '192.168.0.9', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: b6af31d3-ecc2-44e9-819c-f7cf2b346f26&#10;*** Element info: {Using=xpath, value=//span[@class='chat_button tmp_chat_fixes js-playtech-chat column3-6']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:422)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:361)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)&#13;&#10;&#9;at com.WebConnector.WebConnector.click(WebConnector.java:94)&#13;&#10;&#9;at com.suite.Register.ChatBoxTest.i_click_on_Home(ChatBoxTest.java:29)&#13;&#10;&#9;at ✽.When I click on Home&quot;Chatlink&quot;(main/resources/com/suite/Register/features/com.suite.ChatBox.feature:13)&#13;&#10;Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class='chat_button tmp_chat_fixes js-playtech-chat column3-6']&quot;}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'solomon', ip: '192.168.0.9', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)&#13;&#10;&#9;at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)&#13;&#10;"><![CDATA[Given I navigate to "siteName" on "Mozilla".................................passed
+When I click on Home"Chatlink"..............................................failed
+And I enter "chatTextBox" as "Hello"........................................skipped
+And I click on "chatSextButton".............................................skipped
+Then Message should be "Sucessfully"........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//span[@class='chat_button tmp_chat_fixes js-playtech-chat column3-6']"}
+Command duration or timeout: 5.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'solomon', ip: '192.168.0.9', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b6af31d3-ecc2-44e9-819c-f7cf2b346f26
+*** Element info: {Using=xpath, value=//span[@class='chat_button tmp_chat_fixes js-playtech-chat column3-6']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.WebConnector.WebConnector.click(WebConnector.java:94)
+	at com.suite.Register.ChatBoxTest.i_click_on_Home(ChatBoxTest.java:29)
+	at ✽.When I click on Home"Chatlink"(main/resources/com/suite/Register/features/com.suite.ChatBox.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//span[@class='chat_button tmp_chat_fixes js-playtech-chat column3-6']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'solomon', ip: '192.168.0.9', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Solomon/AppData/Local/Temp/anonymous5189454030620480483webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+]]></failure>
+</testcase>
+<testcase classname="FooterLinks" name="FooterLinks" time="5.717916">
+<system-out><![CDATA[Given I navigate to "siteName" on "Mozilla".................................passed
+And I click on "TV_Presenter"...............................................passed
+Then "Presenter" element should be present..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FooterLinks" name="FooterLinks_2" time="5.79207">
+<system-out><![CDATA[Given I navigate to "siteName" on "Mozilla".................................passed
+And I click on "Video"......................................................passed
+Then "AllVideoTab" element should be present................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FooterLinks" name="FooterLinks_3" time="3.912022">
+<system-out><![CDATA[Given I navigate to "siteName" on "Mozilla".................................passed
+And I click on "vip"........................................................passed
+Then "VIPLogo" element should be present....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FooterLinks" name="FooterLinks_4" time="12.108896">
+<system-out><![CDATA[Given I navigate to "siteName" on "Mozilla".................................passed
+And I click on "Winners"....................................................passed
+Then "winners" element should be present....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FooterLinks" name="FooterLinks_5" time="5.013686">
+<system-out><![CDATA[Given I navigate to "siteName" on "Mozilla".................................passed
+And I click on "GettingStarted".............................................passed
+Then "gettingstarted" element should be present.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
