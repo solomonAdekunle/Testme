@@ -13,7 +13,7 @@ public class LoginTest {
 	WebConnector selenium = WebConnector.getInstance();
 
 	/*
-	 * @param {string} object- is SiginButton
+	 * @param{string} object- is SiginButton
 	 */
 	@And("^I click \"([^\"]*)\"$")
 	public void i_click(String object) throws Throwable {
@@ -27,7 +27,8 @@ public class LoginTest {
 	 * 
 	 **/
 	@Then("^\"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"should be present$")
-	public void should_be_present(String object1, String object2, String object3, String object4, String object) throws Throwable {
+	public void should_be_present(String object1, String object2, String object3, String object4)
+			throws Throwable {
 		System.out.println("VerificationObject - " + object1);
 		boolean Db1 = selenium.isElementPresent(object1);
 		System.out.println("VerificationObject - " + object2);
@@ -40,7 +41,7 @@ public class LoginTest {
 		System.out.println(Db2);
 		System.out.println(Db3);
 		System.out.println(Db4);
-		selenium.logOut(object);
+		//selenium.logOut(object);
 
 	}
 

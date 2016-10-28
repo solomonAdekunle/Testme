@@ -18,8 +18,8 @@ public void i_have_logged_in_supercasino_on_Mozilla() throws Throwable {
 	if(!selenium.isLoggedIn()){
 		// loging the user
 		selenium.doDefaultLogin();
-		Thread.sleep(500);
-		//selenium.switchframe();
+		
+		
 	}
 }
 	

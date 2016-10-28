@@ -177,7 +177,7 @@ formatter.match({
       "offset": 45
     }
   ],
-  "location": "LoginTest.should_be_present(String,String,String,String,String)"
+  "location": "LoginTest.should_be_present(String,String,String,String)"
 });
 formatter.result({
   "status": "skipped"

@@ -67,7 +67,7 @@
 						<argument>--format</argument>
 						<argument>html:target/cucumber-html-report</argument>
 						<argument>--tags</argument>
-						<argument>@FooterLinks,@ChatBox,@PromotionBanners,@Deposit,@Deposit, @Login </argument>
+						<argument> @PresenterPage</argument>
 						<argument>--glue</argument>
 						<argument>com/</argument>
 						<argument>src/</argument>
