@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cashier]">
+  <listeners>
+    <listener class-name="TestUtil.CustomListener"/>
+  </listeners>
+  <test name="AccountTest(failed)">
+    <classes>
+      <class name="Cashier.Deposit">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Cashier.Deposit -->
+      <class name="Cashier.AccountTest">
+        <methods>
+          <include name="close"/>
+          <include name="AccountMenutest"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Cashier.AccountTest -->
+    </classes>
+  </test> <!-- AccountTest(failed) -->
+  <test name="Deposit(failed)">
+    <classes>
+      <class name="Cashier.Deposit">
+        <methods>
+          <include name="Deposit" invocation-numbers="0 1 2"/>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Cashier.Deposit -->
+      <class name="Cashier.AccountTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Cashier.AccountTest -->
+    </classes>
+  </test> <!-- Deposit(failed) -->
+</suite> <!-- Failed suite [Cashier] -->

@@ -1,39 +1,466 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>TestNG:  Unit Test</title>
-<style type="text/css">
-table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
-table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
-border:1px solid #000099;padding:.25em .5em .25em .5em
-}
-table.param th {vertical-align:bottom}
-td.numi,th.numi,td.numi_attn {
-text-align:right
-}
-tr.total td {font-weight:bold}
-table caption {
-text-align:center;font-weight:bold;
-}
-table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
-table.passed td,table tr.passedeven td {background-color: #33FF33;}
-table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
-table.passed td,table tr.skippedodd td {background-color: #dddddd;}
-table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
-table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
-tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
-p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
-div.shootout {padding:2em;border:3px #4854A8 solid}
-</style>
-</head>
-<body>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-</table>
-<a id="summary"></a>
-<table cellspacing=0 cellpadding=0 class="passed">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
-</table>
-<h1>Command line test</h1>
-</body></html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Bingo_Core_SUITE</th></tr><tr><td><a href="#t0">LoginTest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">68,629</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">RegistrationTest</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">7</td><td class="num">299,645</td><td></td><td></td></tr><tr><td><a href="#t2">ForgottenDetailsTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">11</td><td class="num">358,767</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">HomePage</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">1</td><td class="num">311,396</td><td></td><td></td></tr><tr><td><a href="#t4">LoginPop_UpBox</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">43,359</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t5">PromotionsPage</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">20,968</td><td></td><td></td></tr><tr><th colspan="7">Games</th></tr><tr><td><a href="#t6">BingoGamesCategoryTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">163,015</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t7">GamesCategoryTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">181,681</td><td></td><td></td></tr><tr><th colspan="7">Cashier</th></tr><tr><td><a href="#t8">AccountTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">216,151</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t9">Deposit</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">78,950</td><td></td><td></td></tr><tr><th>Total</th><th class="num">19</th><th class="num">0</th><th class="num attn">35</th><th class="num">1,742,561</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Bingo_Core_SUITE</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">Bingo_Core_SUITE.LoginTest</td><td><a href="#m0">logintest</a></td><td rowspan="4">1509635641343</td><td rowspan="4">25281</td></tr><tr class="passedeven"><td><a href="#m1">logintest</a></td></tr><tr class="passedeven"><td><a href="#m2">logintest</a></td></tr><tr class="passedeven"><td><a href="#m3">logintest</a></td></tr></tbody><tbody id="t1"><tr><th colspan="4">RegistrationTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">Bingo_Core_SUITE.RegistrationTest</td><td><a href="#m4">RegistrationTest</a></td><td rowspan="7">1509635772975</td><td rowspan="7">15438</td></tr><tr class="failedeven"><td><a href="#m5">RegistrationTest</a></td></tr><tr class="failedeven"><td><a href="#m6">RegistrationTest</a></td></tr><tr class="failedeven"><td><a href="#m7">RegistrationTest</a></td></tr><tr class="failedeven"><td><a href="#m8">RegistrationTest</a></td></tr><tr class="failedeven"><td><a href="#m9">RegistrationTest</a></td></tr><tr class="failedeven"><td><a href="#m10">RegistrationTest</a></td></tr><tr><th colspan="4">RegistrationTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">Bingo_Core_SUITE.RegistrationTest</td><td><a href="#m11">RegistrationTest</a></td><td rowspan="5">1509635959877</td><td rowspan="5">48338</td></tr><tr class="passedeven"><td><a href="#m12">RegistrationTest</a></td></tr><tr class="passedeven"><td><a href="#m13">RegistrationTest</a></td></tr><tr class="passedeven"><td><a href="#m14">RegistrationTest</a></td></tr><tr class="passedeven"><td><a href="#m15">RegistrationTest</a></td></tr></tbody><tbody id="t2"><tr><th colspan="4">ForgottenDetailsTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="11">Bingo_Core_SUITE.ForgottenDetailsTest</td><td><a href="#m16">ForgottenDetailstest</a></td><td rowspan="11">1509636009097</td><td rowspan="11">33889</td></tr><tr class="failedeven"><td><a href="#m17">ForgottenDetailstest</a></td></tr><tr class="failedeven"><td><a href="#m18">ForgottenDetailstest</a></td></tr><tr class="failedeven"><td><a href="#m19">ForgottenDetailstest</a></td></tr><tr class="failedeven"><td><a href="#m20">ForgottenDetailstest</a></td></tr><tr class="failedeven"><td><a href="#m21">ForgottenDetailstest</a></td></tr><tr class="failedeven"><td><a href="#m22">ForgottenDetailstest</a></td></tr><tr class="failedeven"><td><a href="#m23">ForgottenDetailstest</a></td></tr><tr class="failedeven"><td><a href="#m24">ForgottenDetailstest</a></td></tr><tr class="failedeven"><td><a href="#m25">ForgottenDetailstest</a></td></tr><tr class="failedeven"><td><a href="#m26">ForgottenDetailstest</a></td></tr></tbody><tbody id="t3"><tr><th colspan="4">HomePage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Bingo_Core_SUITE.HomePage</td><td><a href="#m27">HelpVertcalMenutest</a></td><td rowspan="1">1509636560736</td><td rowspan="1">62762</td></tr><tr><th colspan="4">HomePage &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">Bingo_Core_SUITE.HomePage</td><td><a href="#m28">BingoVertcalMenutest</a></td><td rowspan="1">1509636367894</td><td rowspan="1">60491</td></tr><tr class="passedeven"><td><a href="#m29">Footertest</a></td><td rowspan="1">1509636429239</td><td rowspan="1">67268</td></tr><tr class="passedeven"><td><a href="#m30">GamblingCommsionIcontest</a></td><td rowspan="1">1509636497344</td><td rowspan="1">10049</td></tr><tr class="passedeven"><td><a href="#m31">GamecareIcontest</a></td><td rowspan="1">1509636508210</td><td rowspan="1">14064</td></tr><tr class="passedeven"><td><a href="#m32">Headertest</a></td><td rowspan="1">1509636523140</td><td rowspan="1">36738</td></tr><tr class="passedeven"><td><a href="#m33">PromotionsVertcalMenutest</a></td><td rowspan="1">1509636624361</td><td rowspan="1">35535</td></tr><tr class="passedeven"><td><a href="#m34">netplaytvicontest</a></td><td rowspan="1">1509636660654</td><td rowspan="1">17760</td></tr></tbody><tbody id="t4"><tr><th colspan="4">LoginPop_UpBox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Bingo_Core_SUITE.LoginPop_UpBox</td><td><a href="#m35">loginPop_UpBox_JoinNowtest</a></td><td rowspan="1">1509636709163</td><td rowspan="1">12684</td></tr><tr><th colspan="4">LoginPop_UpBox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Bingo_Core_SUITE.LoginPop_UpBox</td><td><a href="#m36">LoginPop_upBoxtest</a></td><td rowspan="1">1509636679279</td><td rowspan="1">29065</td></tr></tbody><tbody id="t5"><tr><th colspan="4">PromotionsPage &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Bingo_Core_SUITE.PromotionsPage</td><td><a href="#m37">PromotionsMenu1test</a></td><td rowspan="1">1509636722660</td><td rowspan="1">20135</td></tr></tbody><tbody><tr><th colspan="4">Games</th></tr></tbody><tbody id="t6"><tr><th colspan="4">BingoGamesCategoryTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">Games.BingoGamesCategoryTest</td><td><a href="#m38">AllBingotest</a></td><td rowspan="1">1509637038777</td><td rowspan="1">41276</td></tr><tr class="failedeven"><td><a href="#m39">ball75patterntest</a></td><td rowspan="1">1509637080792</td><td rowspan="1">15019</td></tr><tr class="failedeven"><td><a href="#m40">ball75test</a></td><td rowspan="1">1509637096487</td><td rowspan="1">26229</td></tr><tr class="failedeven"><td><a href="#m41">ball80test</a></td><td rowspan="1">1509637123490</td><td rowspan="1">25094</td></tr><tr class="failedeven"><td><a href="#m42">ball90test</a></td><td rowspan="1">1509637149341</td><td rowspan="1">24637</td></tr><tr class="failedeven"><td><a href="#m43">bingojackpottest</a></td><td rowspan="1">1509637174730</td><td rowspan="1">26323</td></tr></tbody><tbody id="t7"><tr><th colspan="4">GamesCategoryTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">Games.BingoGamesCategoryTest</td><td><a href="#m44">AllBingotest</a></td><td rowspan="1">1509637201797</td><td rowspan="1">40683</td></tr><tr class="failedeven"><td><a href="#m45">ball75patterntest</a></td><td rowspan="1">1509637243212</td><td rowspan="1">27304</td></tr><tr class="failedeven"><td><a href="#m46">ball75test</a></td><td rowspan="1">1509637271258</td><td rowspan="1">32902</td></tr><tr class="failedeven"><td><a href="#m47">ball80test</a></td><td rowspan="1">1509637304903</td><td rowspan="1">24236</td></tr><tr class="failedeven"><td><a href="#m48">ball90test</a></td><td rowspan="1">1509637329878</td><td rowspan="1">25263</td></tr><tr class="failedeven"><td><a href="#m49">bingojackpottest</a></td><td rowspan="1">1509637355880</td><td rowspan="1">26859</td></tr></tbody><tbody><tr><th colspan="4">Cashier</th></tr></tbody><tbody id="t8"><tr><th colspan="4">AccountTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Cashier.AccountTest</td><td><a href="#m50">AccountMenutest</a></td><td rowspan="1">1509636743641</td><td rowspan="1">215393</td></tr></tbody><tbody id="t9"><tr><th colspan="4">Deposit &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Cashier.Deposit</td><td><a href="#m51">Deposit</a></td><td rowspan="3">1509636959839</td><td rowspan="3">29848</td></tr><tr class="failedeven"><td><a href="#m52">Deposit</a></td></tr><tr class="failedeven"><td><a href="#m53">Deposit</a></td></tr></tbody></table><h2>LoginTest</h2><h3 id="m0">Bingo_Core_SUITE.LoginTest#logintest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=mmm12, Password=MNNH$1, Runmode=Y, Expected_Result=FAILURE, Browser=Chrome, Result=}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">Bingo_Core_SUITE.LoginTest#logintest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=Noblebug228, Password=Bola123, Runmode=Y, Expected_Result=FAILURE, Browser=Chrome, Result=}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">Bingo_Core_SUITE.LoginTest#logintest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=BingoTest3, Password=Wift$8%t7O^SKouOuMF0, Runmode=Y, Expected_Result=SUCCESS, Browser=Chrome, Result=}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">Bingo_Core_SUITE.LoginTest#logintest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=NNNNNNNNNNNNNNNNNNNNN1, Password=GGGGGGGGGGGGGGGGGGGG1, Runmode=Y, Expected_Result=FAILURE, Browser=Chrome, Result=}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>RegistrationTest</h2><h3 id="m4">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=ADSERTYG, contactNum=0207100600, address=8,silverthorne, Username=1.2345678E7, Title=MR, Expected_Result=FAILURE, confirmPassword=ADSERTYG, lastname=ASEDDR, Result=, Firstname=, year=1980.0, Runmode=Y, city=Greatest of LONDON area of united kingdon europes, promoCode=BONUS200, day=3.0, county=Greatest of LONDON area of united kingdon europes, month=OCT, Email=test@playtec.com, postcode=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (903, 1014)
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 51 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir10040_23222}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 38579b47a68b2de7d077f5c946622733
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Base.TestBase.click(TestBase.java:176)
+	at Bingo_Core_SUITE.RegistrationTest.RegistrationTest(RegistrationTest.java:63)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=GGGGGGGGGGGGGGGGGGGG1, contactNum=0207000100, address=8//, Username=NNNNNNNNNNNNNNNNNNNNN1, Title=Ms, Expected_Result=FAILURE, confirmPassword=GGGGGGGGGGGGGGGGGGGG1, lastname=AGGTR&apos;S, Result=, Firstname=GHJUYT&apos;S, year=1980.0, Runmode=Y, city=L, promoCode=, day=3.0, county=Greater LONDON, month=OCT, Email=test@playtec.com, postcode=SW8 3HE}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.01 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir10128_24990}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: f6ea8b0a17e3c0476bf6d56ad3299de0
+*** Element info: {Using=xpath, value=//a[@class=&apos;button success register&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.click(TestBase.java:176)
+	at Bingo_Core_SUITE.RegistrationTest.RegistrationTest(RegistrationTest.java:42)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=1.2345678E7, contactNum=0207001000, address=0.08, Username=markge, Title=DR, Expected_Result=FAILURE, confirmPassword=1.2345678E7, lastname=HJUUT12, Result=, Firstname=AGRT BG, year=1980.0, Runmode=Y, city=london1, promoCode=Prom2345, day=3.0, county=Greatest of LONDON area of united kingdon europes, month=OCT, Email=test@playtec.com, postcode=SW8 3HE}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (903, 982)
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 52 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir3960_15850}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6d8ba538f92b5322cfc571a01f43f70f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Base.TestBase.click(TestBase.java:176)
+	at Bingo_Core_SUITE.RegistrationTest.RegistrationTest(RegistrationTest.java:63)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=lookjng£*^, contactNum=0207100601, address=, Username=, Title=MR, Expected_Result=FAILURE, confirmPassword=lookjng£*^, lastname=, Result=, Firstname=asderty, year=1980.0, Runmode=Y, city=london, promoCode=, day=3.0, county=London, month=OCT, Email=, postcode=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (903, 930)
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 51 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir12192_18721}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 23a3f9ba518490dd10f0308a9c6eafe0
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Base.TestBase.click(TestBase.java:176)
+	at Bingo_Core_SUITE.RegistrationTest.RegistrationTest(RegistrationTest.java:63)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=Manjuyt, contactNum=9191GGSS, address=80.0, Username={generator}, Title=, Expected_Result=FAILURE, confirmPassword=Manjuyt, lastname=, Result=, Firstname=, year=1980.0, Runmode=Y, city=SDDDD , promoCode=, day=3.0, county=LONDON, month=OCT, Email=l@.com, postcode=SW8 %67}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (903, 972)
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 51 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir4548_27118}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1a2e5da1d3c285dcc0699aa2f135b301
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Base.TestBase.click(TestBase.java:176)
+	at Bingo_Core_SUITE.RegistrationTest.RegistrationTest(RegistrationTest.java:63)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=Looking/&gt;, contactNum=london01, address=, Username=Snetplaytv$%, Title=, Expected_Result=FAILURE, confirmPassword=Looking/&gt;, lastname=, Result=, Firstname=lao@, year=2001.0, Runmode=Y, city=LONDON%#, promoCode=, day=3.0, county=Surrey-london, month=OCT, Email=£££test@playtech.com, postcode=SW8 3HE+8}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (903, 1056)
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 48 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir11316_9276}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 960baef041f214a3bfa8660d7efb196b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Base.TestBase.click(TestBase.java:176)
+	at Bingo_Core_SUITE.RegistrationTest.RegistrationTest(RegistrationTest.java:63)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=MNNH$1, contactNum=0203700700, address=8, silverthorne, Username=mmm12, Title=Miss, Expected_Result=FAILURE, confirmPassword=MNNH$2, lastname=MNHGF, Result=, Firstname=MJHGF-12, year=1980.0, Runmode=Y, city=London, promoCode=, day=3.0, county=l, month=OCT, Email=test@playtec.com, postcode=SW8 3HE}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.02 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir5408_7906}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 90feba984448d5e497fb6456657b407b
+*** Element info: {Using=xpath, value=//*[@id=&apos;address&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.input(TestBase.java:220)
+	at Bingo_Core_SUITE.RegistrationTest.RegistrationTest(RegistrationTest.java:65)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=Bola123$%^, contactNum=02071006020, address=80.0, Username={generator}, Title=MR, Expected_Result=SUCCESS, confirmPassword=Bola123$%^, lastname=bolabo, Result=, Firstname=mark, year=1980.0, Runmode=Y, city=LONDON, promoCode=, day=3.0, county=LONDON, month=OCT, Email=test@playtech.com, postcode=SW8 3HE}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m12">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=££££££££££&gt;, contactNum=++U13234803556000, address=80.0, Username=Snetplay-TV, Title=Miss, Expected_Result=FAILURE, confirmPassword=££££££££££&gt;, lastname=^^^^^&quot;&quot;&quot;**, Result=, Firstname=add*add, year=2018.0, Runmode=Y, city=London&amp;&amp;&amp;, promoCode=, day=23.0, county=1234555.0, month=Jun, Email=temmtt, postcode=SW8 3HE}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m13">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=Bola123$%^£, contactNum=02071006020, address=80.0, Username={generator}, Title=MR, Expected_Result=FAILURE, confirmPassword=Bola123$%^£, lastname=bolabo, Result=, Firstname=mark, year=1980.0, Runmode=Y, city=LONDON, promoCode=, day=3.0, county=LONDON, month=OCT, Email=test@playtech.com, postcode=SW8 3HE}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m14">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=Bola123$%^, contactNum=02071006020, address=80.0, Username={generator}, Title=MR, Expected_Result=FAILURE, confirmPassword=, lastname=bolabo, Result=, Firstname=mark, year=1980.0, Runmode=Y, city=LONDON, promoCode=, day=3.0, county=LONDON, month=OCT, Email=test@playtech.com, postcode=SW8 3HE}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m15">Bingo_Core_SUITE.RegistrationTest#RegistrationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Browser=Chrome, Password=$$$$$%%1a, contactNum=, address=8.0, Username=123456£1, Title=DR, Expected_Result=FAILURE, confirmPassword=$$$$$%%1a, lastname=&amp;$£agas, Result=, Firstname=adde$), year=2015.0, Runmode=Y, city=greater3LONDON, promoCode=, day=3.0, county=, month=, Email=testplaytech.com, postcode=}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>ForgottenDetailsTest</h2><h3 id="m16">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=bola1231, Username=manggee, Result=Incorrect, Runmode=Y, Email=test@playtech.com, Expected_Result=FAILURE, ConfirmPasswordR=bola1234, month=9.0, year=1990.0, day=2.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir10136_14778}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a29f66bd0d1a5505c41ac070a507f07d
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m17">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=, Username=, Result=Incorrect, Runmode=Y, Email=test@playtech.com, Expected_Result=FAILURE, ConfirmPasswordR=bola1234, month=0.0, year=1980.0, day=2.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir4352_21522}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: b1da15652a9adec7676b9e9de941cd64
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m18">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=bola123, Username=netplay258, Result=Correct, Runmode=Y, Email=test@playtech.com, Expected_Result=FAILURE, ConfirmPasswordR=bola123, month=9.0, year=1980.0, day=3.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir3972_10066}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 59d3cc5002070c08a06aa95749df26c2
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m19">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=1.2345678E7, Username=netplay258, Result=Correct, Runmode=Y, Email=test@playtech.com, Expected_Result=FAILURE, ConfirmPasswordR=1.2345678E7, month=9.0, year=1980.0, day=3.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir5864_28927}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: c74638e41575d02d8982d914b6e653bb
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m20">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=bola1£1, Username=netplay258, Result=Correct, Runmode=Y, Email=test@playtech.com, Expected_Result=FAILURE, ConfirmPasswordR=bola1£1, month=9.0, year=1980.0, day=3.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir8932_20202}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 69c9fb20b39307ee00574edd7834f42c
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m21">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=ADGETYUYYYYA, Username=netplay258, Result=Correct, Runmode=Y, Email=test@playtech.com, Expected_Result=FAILURE, ConfirmPasswordR=ADGETYUYYYYA, month=9.0, year=1980.0, day=3.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir6564_24979}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: e1d600aac7814c36c252389ebda6c65b
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m22">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=bolabola, Username=netplay258, Result=Correct, Runmode=Y, Email=test@playtech.com, Expected_Result=FAILURE, ConfirmPasswordR=bolabola, month=9.0, year=1980.0, day=3.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir4512_24989}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: e5fc7ddad8fd17eade1a74a2a9099f3b
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m23">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=Bola123$%^, Username=netplay258, Result=Correct, Runmode=Y, Email=test@playtech.com, Expected_Result=, ConfirmPasswordR=Bola123$%^, month=9.0, year=1980.0, day=3.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir8864_14703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 47dc6910a4aba56cf525e08f100cacad
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m24">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=bola1234, Username=Nobelbug11, Result=Incorrect, Runmode=Y, Email=testplay.com, Expected_Result=FAILURE, ConfirmPasswordR=bola1234, month=8.0, year=1990.0, day=7.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir8616_3823}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 4193b9eadacf2a9756350b9f3c55c6f5
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m25">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=bola1240, Username=H, Result=Incorrect, Runmode=Y, Email=test@playtech.com, Expected_Result=FAILURE, ConfirmPasswordR=, month=7.0, year=1990.0, day=7.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir6160_19889}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1ef341056a61b1eb41b5ec504590321b
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m26">Bingo_Core_SUITE.ForgottenDetailsTest#ForgottenDetailstest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{NewPassword=bolabola123$%^, Username=, Result=Incorrect, Runmode=Y, Email=test@playtech.com, Expected_Result=FAILURE, ConfirmPasswordR=bolabola123$%^, month=9.0, year=1981.0, day=3.0, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir5540_16063}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 7ba24787af12766d9a0588edf2d941e0
+*** Element info: {Using=xpath, value=//div[@class=&apos;modal-dialog&apos;]//aside[@class=&apos;help-txt&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at Base.TestBase.getText(TestBase.java:266)
+	at Bingo_Core_SUITE.ForgottenDetailsTest.ForgottenDetailstest(ForgottenDetailsTest.java:53)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>HomePage</h2><h3 id="m27">Bingo_Core_SUITE.HomePage#HelpVertcalMenutest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir3456_8899}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: b8398b8e4373490f4f6021876021e9f4
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Bingo_Core_SUITE.HomePage.HelpVertcalMenutest(HomePage.java:273)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m28">Bingo_Core_SUITE.HomePage#BingoVertcalMenutest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m29">Bingo_Core_SUITE.HomePage#Footertest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m30">Bingo_Core_SUITE.HomePage#GamblingCommsionIcontest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m31">Bingo_Core_SUITE.HomePage#GamecareIcontest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m32">Bingo_Core_SUITE.HomePage#Headertest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m33">Bingo_Core_SUITE.HomePage#PromotionsVertcalMenutest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m34">Bingo_Core_SUITE.HomePage#netplaytvicontest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>LoginPop_UpBox</h2><h3 id="m35">Bingo_Core_SUITE.LoginPop_UpBox#loginPop_UpBox_JoinNowtest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [https://bingo.vernons.com/register] but found [https://bingo.qa.vernons.com/register]
+	at Bingo_Core_SUITE.LoginPop_UpBox.loginPop_UpBox_JoinNowtest(LoginPop_UpBox.java:57)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m36">Bingo_Core_SUITE.LoginPop_UpBox#LoginPop_upBoxtest</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>PromotionsPage</h2><h3 id="m37">Bingo_Core_SUITE.PromotionsPage#PromotionsMenu1test</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>BingoGamesCategoryTest</h2><h3 id="m38">Games.BingoGamesCategoryTest#AllBingotest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 3, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.AllBingotest(BingoGamesCategoryTest.java:37)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m39">Games.BingoGamesCategoryTest#ball75patterntest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.01 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir932_7221}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6e89e3773954b775f1f081849721874d
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:364)
+	at Base.TestBase.navigate(TestBase.java:169)
+	at Base.TestBase.doLogin(TestBase.java:290)
+	at Base.TestBase.doDefaultLogin(TestBase.java:301)
+	at Games.BingoGamesCategoryTest.ball75patterntest(BingoGamesCategoryTest.java:110)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m40">Games.BingoGamesCategoryTest#ball75test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.ball75test(BingoGamesCategoryTest.java:99)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m41">Games.BingoGamesCategoryTest#ball80test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.ball80test(BingoGamesCategoryTest.java:78)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m42">Games.BingoGamesCategoryTest#ball90test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.ball90test(BingoGamesCategoryTest.java:57)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m43">Games.BingoGamesCategoryTest#bingojackpottest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.bingojackpottest(BingoGamesCategoryTest.java:141)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>GamesCategoryTest</h2><h3 id="m44">Games.BingoGamesCategoryTest#AllBingotest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 3, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.AllBingotest(BingoGamesCategoryTest.java:37)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m45">Games.BingoGamesCategoryTest#ball75patterntest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.ball75patterntest(BingoGamesCategoryTest.java:119)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m46">Games.BingoGamesCategoryTest#ball75test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.ball75test(BingoGamesCategoryTest.java:99)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m47">Games.BingoGamesCategoryTest#ball80test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.ball80test(BingoGamesCategoryTest.java:78)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m48">Games.BingoGamesCategoryTest#ball90test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.ball90test(BingoGamesCategoryTest.java:57)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m49">Games.BingoGamesCategoryTest#bingojackpottest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at Games.BingoGamesCategoryTest.bingojackpottest(BingoGamesCategoryTest.java:141)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>AccountTest</h2><h3 id="m50">Cashier.AccountTest#AccountMenutest</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Deposit</h2><h3 id="m51">Cashier.Deposit#Deposit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Card=1111.0, Amount=3.0, Runmode=Y, Cvv2=123, promoCode=, Expected_Result=FAILURE, Browser=Chrome, Result=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir11656_18363}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dd613e1adae386cbff280758ed024912
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at Base.TestBase.input(TestBase.java:220)
+	at Cashier.Deposit.Deposit(Deposit.java:40)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m52">Cashier.Deposit#Deposit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Card=1111.0, Amount=20.0, Runmode=Y, Cvv2=, promoCode=, Expected_Result=FAILURE, Browser=Chrome, Result=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 45 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir6404_622}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 7dafcd83ec2c0daf37e0e2fca28f21b7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at Base.TestBase.input(TestBase.java:220)
+	at Cashier.Deposit.Deposit(Deposit.java:40)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m53">Cashier.Deposit#Deposit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Card=1111.0, Amount=20.0, Runmode=Y, Cvv2=123, promoCode=, Expected_Result=SUCCESS, Browser=Chrome, Result=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 41 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NP-SADEKUNLE&apos;, ip: &apos;10.44.3.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SOLOMO~1.ADE\AppData\Local\Temp\scoped_dir2024_6930}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: aa77d31f7e932442f00a81158533e3aa
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at Base.TestBase.input(TestBase.java:220)
+	at Cashier.Deposit.Deposit(Deposit.java:40)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

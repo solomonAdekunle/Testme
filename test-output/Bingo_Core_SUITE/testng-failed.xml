@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Bingo_Core_SUITE]">
+  <test name="ForgottenDetailsTest(failed)">
+    <classes>
+      <class name="Bingo_Core_SUITE.RegistrationTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.RegistrationTest -->
+      <class name="Bingo_Core_SUITE.ForgottenDetailsTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+          <include name="ForgottenDetailstest" invocation-numbers="5 7 9 10"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.ForgottenDetailsTest -->
+      <class name="Bingo_Core_SUITE.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.LoginTest -->
+      <class name="Bingo_Core_SUITE.PromotionsPage">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.PromotionsPage -->
+      <class name="Bingo_Core_SUITE.HomePage">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.HomePage -->
+      <class name="Bingo_Core_SUITE.LoginPop_UpBox">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.LoginPop_UpBox -->
+    </classes>
+  </test> <!-- ForgottenDetailsTest(failed) -->
+  <test name="HomePage(failed)">
+    <classes>
+      <class name="Bingo_Core_SUITE.RegistrationTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.RegistrationTest -->
+      <class name="Bingo_Core_SUITE.ForgottenDetailsTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.ForgottenDetailsTest -->
+      <class name="Bingo_Core_SUITE.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.LoginTest -->
+      <class name="Bingo_Core_SUITE.PromotionsPage">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.PromotionsPage -->
+      <class name="Bingo_Core_SUITE.HomePage">
+        <methods>
+          <include name="GamblingCommsionIcontest" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.HomePage -->
+      <class name="Bingo_Core_SUITE.LoginPop_UpBox">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.LoginPop_UpBox -->
+    </classes>
+  </test> <!-- HomePage(failed) -->
+  <test name="LoginPop_UpBox(failed)">
+    <classes>
+      <class name="Bingo_Core_SUITE.RegistrationTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.RegistrationTest -->
+      <class name="Bingo_Core_SUITE.ForgottenDetailsTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.ForgottenDetailsTest -->
+      <class name="Bingo_Core_SUITE.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.LoginTest -->
+      <class name="Bingo_Core_SUITE.PromotionsPage">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.PromotionsPage -->
+      <class name="Bingo_Core_SUITE.LoginPop_UpBox">
+        <methods>
+          <include name="LoginPop_upBoxtest"/>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.LoginPop_UpBox -->
+      <class name="Bingo_Core_SUITE.HomePage">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- Bingo_Core_SUITE.HomePage -->
+    </classes>
+  </test> <!-- LoginPop_UpBox(failed) -->
+</suite> <!-- Failed suite [Bingo_Core_SUITE] -->

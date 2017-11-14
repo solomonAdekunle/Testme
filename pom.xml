@@ -1,144 +1,117 @@
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.suite</groupId>
-	<artifactId>focusSmart</artifactId>
-	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+  <groupId>Suite</groupId>
+  <artifactId>Vernons-BingoReDesign</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-	<name>focusSmart</name>
-	<url>http://maven.apache.org</url>
+  <name>Vernons-BingoReDesign</name>
+  <url>http://maven.apache.org</url>
 
-
-
-	<properties>
-		<cucumber-jvm.version>1.2.4</cucumber-jvm.version>
-		<selenium.version>2.53.0</selenium.version>
-		<junit.version>4.12</junit.version>
+  <properties>
+		<jre.level>1.8</jre.level>
+		<jdk.level>1.8</jdk.level>
 	</properties>
 
-
 	<build>
-
-		<testResources>
-			<testResource>
-				<directory>src/main/resources</directory>
-				<includes>
-					<include>log4j.properties</include>
-				</includes>
-			</testResource>
-		</testResources>
-
-
 		<plugins>
-
-			<!--plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-site-plugin</artifactId> 
-				<version>3.0-beta-3</version> </plugin> <plugin> <groupId>org.codehaus.mojo</groupId> 
-				<artifactId>surefire-report-maven-plugin</artifactId> </plugin -->
-
-
+			<!-- Compiler plug-in -->
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.4.0</version>
-				<executions>
-					<execution>
-						<phase>integration-test</phase>
-
-						<goals>
-							<goal>java</goal>
-						</goals>
-					</execution>
-				</executions>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<executableDependency>
-						<groupId>info.cukes</groupId>
-						<artifactId>cucumber-core</artifactId>
-					</executableDependency>
-
-					<mainClass>cucumber.api.cli.Main</mainClass>
-					<arguments>
-						<argument>--format</argument>
-						<argument>junit:target/cucumber-junit-report/allcukes.xml</argument>
-						<argument>--format</argument>
-						<argument>pretty</argument>
-						<argument>--format</argument>
-						<argument>html:target/cucumber-html-report</argument>
-						<argument>--tags</argument>
-						<argument> @PresenterPage</argument>
-						<argument>--glue</argument>
-						<argument>com/</argument>
-						<argument>src/</argument>
-
-					</arguments>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>info.cukes</groupId>
-						<artifactId>cucumber-core</artifactId>
-						<version>1.2.4</version>
-					</dependency>
-				</dependencies>
+			</plugin>
+			<!-- Below plug-in is used to execute tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>src/test/resource/Bingo_Core_SUITE.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resource/Cashier.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resource/Games.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
 			</plugin>
 		</plugins>
-
-
-
-
 	</build>
-
+	<!-- Include the following dependencies -->
 	<dependencies>
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-picocontainer</artifactId>
-			<version>${cucumber-jvm.version}</version>
+		
+		      <dependency>
+   	 <groupId>org.testng</groupId>
+    	 <artifactId>testng</artifactId>
+    	 <version>6.8.17</version>
+       <scope>test</scope>
+      </dependency>
+     <!-- Selenium -->
+  	  <dependency>
+              <groupId>org.seleniumhq.selenium</groupId>
+              <artifactId>selenium-java</artifactId>
+              <version>3.4.0</version>
+        </dependency>
+        <dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.40.1</version>
 		</dependency>
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-junit</artifactId>
-			<version>${cucumber-jvm.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>1.2.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>${selenium.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-support</artifactId>
-			<version>${selenium.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-			<version>1.1.1</version>
-		</dependency>
+     <!-- POI -->
+     <dependency>
+  	<groupId>org.apache.poi</groupId>
+  	<artifactId>poi</artifactId>
+  	<version>3.15</version>
+     </dependency>
+     <dependency>
+  		<groupId>org.apache.poi</groupId>
+  		<artifactId>poi-ooxml</artifactId>
+  		<version>3.15</version>
+     </dependency>
+    <dependency>
+  	 <groupId>org.apache.poi</groupId>
+  	 <artifactId>poi-ooxml-schemas</artifactId>
+  	 <version>3.15</version>
+    </dependency>
+    <dependency>
+  	<groupId>dom4j</groupId>
+  	<artifactId>dom4j</artifactId>
+  	<version>1.1</version>
+  </dependency>
+  
+  <dependency>
+  	<groupId>org.apache.xmlbeans</groupId>
+  	<artifactId>xmlbeans</artifactId>
+  	<version>2.6.0</version>
+  </dependency>
+  <!--  Log4J  -->
+  <dependency>
+  	<groupId>log4j</groupId>
+  	<artifactId>log4j</artifactId>
+  	<version>1.2.17</version>
+  </dependency>
+  <!-- JavaMail  -->
+  <dependency>
+  	<groupId>javax.mail</groupId>
+  	<artifactId>mail</artifactId>
+  	<version>1.4</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.0</version>
+</dependency>
+<dependency>
+<groupId>commons-configuration</groupId>
+<artifactId>commons-configuration</artifactId>
+<version>1.10</version>
+</dependency> 
+</dependencies>
 
-	</dependencies>
 </project>
- 
-  
-
-  
