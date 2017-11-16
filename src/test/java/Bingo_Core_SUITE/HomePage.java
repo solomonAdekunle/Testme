@@ -40,8 +40,8 @@ public class HomePage extends TestBase {
 		Thread.sleep(2000);
 		// Verify if all Methods of Vernons Logo is displayed within theHeader
 		isElementPresent("hp_VernonsBingoLogo_xpath");
-		if (!isElementPresent("hp_VernonsBingoLogo_xpath"))// verify if element
-															// is not present
+		if (!isElementPresent("hp_VernonsBingoLogo_xpath"))
+															
 			// System.out.println(false);
 			test.log(LogStatus.FAIL, "Element not displayed");
 		else
@@ -544,15 +544,12 @@ public class HomePage extends TestBase {
 		System.out.println(tabbedWindowId1);
 		while (it1.hasNext())
 			;
-		// System.out.println(it.next());
-		d.switchTo().window(tabbedWindowId1);// switch to the affiliates window
-		Assert.assertEquals(d.getCurrentUrl(), "http://www.betssongroup.com/");// verify
-																				// if
-																				// the
-																				// both
-																				// URL
-																				// are
-																				// equal
+
+		// switch to the affiliates window
+		d.switchTo().window(tabbedWindowId1);
+		// verify if the both URL are equal
+		Assert.assertEquals(d.getCurrentUrl(), "http://www.betssongroup.com/");
+
 		Thread.sleep(2000);
 		d.switchTo().window(MainWindowids1);// switch back to the main window
 		Thread.sleep(2000);
@@ -563,13 +560,8 @@ public class HomePage extends TestBase {
 		Thread.sleep(2000);
 		try {
 			String relativeURL18 = TestBase.getRelativeUrl(d.getCurrentUrl());
-			Assert.assertEquals(relativeURL18, "/responsible-gambling");// verify
-																		// if
-																		// the
-																		// both
-																		// URL
-																		// are
-																		// equal
+			// verify if the both URL are equal
+			Assert.assertEquals(relativeURL18, "/responsible-gambling");
 
 		} catch (Throwable t) {
 			t.getStackTrace();
