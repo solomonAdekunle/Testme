@@ -60,7 +60,8 @@ public class RegistrationTest extends TestBase {
 		input("register_DOBMonth_xpath", table.get(Constant.MONTH_COL));
 		input("register_DOBYear_xpath", table.get(Constant.YEAR_COL));
 		Thread.sleep(2000L);
-		click("register_EnterAddressManually_xpath");
+		WebElement EnterYourAddressManuallyLink=d.findElement(By.xpath(OR.getProperty("register_EnterAddressManually_xpath")));
+		((JavascriptExecutor) d).executeScript("arguments[0].click();", EnterYourAddressManuallyLink);
 		Thread.sleep(2000L);
 		input("register_Address_xpath", table.get(Constant.ADDRESS_COL));
 		input("register_Town/City_xpath", table.get(Constant.CITY_COL));
@@ -117,10 +118,10 @@ public class RegistrationTest extends TestBase {
 
 	@AfterMethod // (enabled=false)
 	public void close() {
-		// if(extent!=null){
-		// extent.endTest(test);
-		// extent.flush();
-		// }
+		 if(extent!=null){
+		 extent.endTest(test);
+		 extent.flush();
+		 }
 		quit();
 	}
 

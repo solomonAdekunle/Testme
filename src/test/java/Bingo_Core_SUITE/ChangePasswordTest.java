@@ -24,7 +24,7 @@ public class ChangePasswordTest extends TestBase {
 		initLogs(this.getClass());
 	}
 
-	@Test(enabled = true, dataProviderClass = TestDataProvider.class, dataProvider = "Bingo_Core_SUITEDataProvider")
+	@Test(enabled = false, dataProviderClass = TestDataProvider.class, dataProvider = "Bingo_Core_SUITEDataProvider")
 	public void ChangePasswordtest(Hashtable<String, String> table)
 			throws IOException, InterruptedException, ConfigurationException {
 		validateRunmodes("ChangePasswordTest", Constant.First_Suite, table.get(Constant.RUNMODE_COL));

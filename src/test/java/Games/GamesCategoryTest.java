@@ -20,8 +20,8 @@ public class GamesCategoryTest extends TestBase {
 
 	@BeforeTest
 	public void initLogs() throws FileNotFoundException {
-		// initLogs(this.getClass());
-		//init();
+		//initLogs(this.getClass());
+		init();
 	}
 
 	@Test()

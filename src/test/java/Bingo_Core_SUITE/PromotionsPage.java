@@ -12,6 +12,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import Base.TestBase;
 import TestUtil.TestDataProvider;
 
@@ -20,8 +22,8 @@ public class PromotionsPage extends TestBase {
 	
 		@BeforeTest
 		public void initLogs() throws FileNotFoundException{
-			//initLogs(this.getClass());
-		//	init();
+				init();
+				initLogs(this.getClass());
 		}
 		
 		@Test(enabled=false)
@@ -55,6 +57,7 @@ public class PromotionsPage extends TestBase {
 		}
 			@Test//(enabled=false)
 			public void PromotionsMenu1test() throws IOException, InterruptedException{
+				test=extent.startTest("PromotionsPage");
 				doDefaultLogin(prop.getProperty("browserType"));// log-in
 				Thread.sleep(2000);
 				click("hp_promotionsVerticalTab_xpath");
@@ -84,12 +87,14 @@ public class PromotionsPage extends TestBase {
 				 	Thread.sleep(200);
 				 	System.out.println(pagetitle);
 				 	if(pagetitle.equalsIgnoreCase(promotionTitle)){
-				 		System.out.println(true);
+				 	//	System.out.println(true);
+				 	 test.log(LogStatus.PASS, "Pagetitle is the same as PromotionTitle");
 				 		
 				 		Thread.sleep(1000);
 				 		d.navigate().back();
 				 	}else{
-				 		System.out.println(false);
+				 		//System.out.println(false);
+				 		test.log(LogStatus.FAIL, "Title page is not the same as PromotionTitle Page");
 				 		return;
 
 				 	}	
@@ -109,7 +114,12 @@ public class PromotionsPage extends TestBase {
 }
 			@AfterMethod
 			public void close(){
-				quit();
+				if(extent!=null){
+					extent.endTest(test);
+					extent.flush();
+				}
+		          quit();
+				
 			
 				
 }

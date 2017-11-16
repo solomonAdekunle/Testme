@@ -37,25 +37,29 @@ public class LoginTest extends TestBase {
 		    if(table.get(Constant.EXPECTEDRESULT_COL).equals("SUCCESS")){
 			// verify if user can login with invalid data 
 			boolean result1=isElementPresent("userNameHolder_xpath");
-			 System.out.println("Looking for error");
+			 System.out.println(result1);
 			 String actualResult1=null;
 		    if(result1)
 				actualResult1="SUCCESS";
 			  else 
 				actualResult1="FAILURE";
-		 	Assert.assertEquals(table.get(Constant.EXPECTEDRESULT_COL), actualResult1);
-//		 		
+		    
+		    if (table.get(Constant.EXPECTEDRESULT_COL).equalsIgnoreCase(actualResult1)){
+		    	test.log(LogStatus.PASS,"User Has Loggedin with Valid data" );
+		    } else
+		    	test.log(LogStatus.FAIL, "User failed to login with valid credential");
+		    Assert.assertEquals(table.get(Constant.EXPECTEDRESULT_COL), actualResult1);			
 		 		}
-		 				
+		   
 
 
 		}
 			@AfterMethod
 			public void close(){
-//				if(extent!=null){
-//					extent.endTest(test);
-//					extent.flush();
-//				}
+				if(extent!=null){
+					extent.endTest(test);
+					extent.flush();
+				}
 				quit();
 }
 }
